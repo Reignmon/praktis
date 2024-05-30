@@ -16,6 +16,6 @@ class Employee extends Model
         'middlename',
         'lastname',
         'age',
-        'gender'	
+        'gender'
     ];
 }

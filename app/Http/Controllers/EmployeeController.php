@@ -9,8 +9,7 @@ class EmployeeController extends Controller
 {
     //
     public function index(){
-        return view('employees.index');
-        
+        return view ('employees.index');
     }
 
     public function show(){
@@ -19,7 +18,7 @@ class EmployeeController extends Controller
         return view('employees.show',compact('employees'));
     }
 
-    public function store(Request $request){
+    public function store(Request $request){    
         $request->validate(
             [
             'firstname'=>'required|regex:/^[a-zA-Z]+$/u|max:255',
@@ -89,7 +88,7 @@ class EmployeeController extends Controller
 
         return redirect('employees/show');
     }
-
+    
     public function destroy(int $id){
         $employees = Employee::findOrFail($id);
         $employees->delete();

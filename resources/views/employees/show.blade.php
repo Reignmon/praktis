@@ -53,7 +53,7 @@
                                                 </i>
                                                 Edit
                                             </a>
-
+    
                                             <a class="btn btn-danger btn-sm" href="{{url('employees/'.$item->id.'/delete')}}">
                                                 <i class="fas fa-trash">
                                                 </i>
