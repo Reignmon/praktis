@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <div class="alert alert-info">
+                    <div class="alert alert-danger">
                         Sample table page
                     </div>
 
