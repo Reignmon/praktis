@@ -7,6 +7,13 @@
                         {{ __('Dashboard') }}
                     </p>
                 </a>
+                <a href="{{ url('employees/table') }}" class="nav-link">
+                    <p>
+                        {{ __('About') }}
+                    </p>
+                </a>
+
+             
                 
         <div class="contaier-fluid">
             <div class="row justify-content-center">

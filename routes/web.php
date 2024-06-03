@@ -11,6 +11,8 @@ Route::get('employees/show',[App\Http\Controllers\EmployeeController::class, 'sh
 Route::get('employees/{id}/edit',[App\Http\Controllers\EmployeeController::class, 'edit']);
 Route::put('employees/{id}/edit',[App\Http\Controllers\EmployeeController::class, 'update']);
 Route::get('employees/{id}/delete',[App\Http\Controllers\EmployeeController::class, 'destroy']);
+Route::get('employees/table',[App\Http\Controllers\EmployeeController::class, 'table']);
+
 
 Route::get('/', function () {
     return view('welcome');

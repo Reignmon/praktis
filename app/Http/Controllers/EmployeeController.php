@@ -17,6 +17,11 @@ class EmployeeController extends Controller
 
         return view('employees.show',compact('employees'));
     }
+    public function table(){
+        $employees =  Employee::get();
+
+        return view('employees.table',compact('employees'));
+    }
 
     public function store(Request $request){    
         $request->validate(
@@ -57,6 +62,7 @@ class EmployeeController extends Controller
 
         return view('employees.edit', compact('employees'));
     }
+  
 
     public function update(Request $request, int $id){
         $request->validate(
