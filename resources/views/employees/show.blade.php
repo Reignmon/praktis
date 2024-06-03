@@ -19,8 +19,8 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <div class="alert alert-info">
-                        Joriz POgi
+                    <div class="alert alert-danger">
+                        Reignmon pogi
                     </div>
 
                     <div class="card">
